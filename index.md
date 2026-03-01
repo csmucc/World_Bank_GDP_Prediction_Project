@@ -67,8 +67,8 @@ Using our model, predicted GDP per capita would increase. This scenario demonstr
 
 ## Project Files
 
-- [`your_notebook.ipynb`](your_notebook.ipynb) — full analysis, cleaning, and modeling  
-- [`your_data.csv`](your_data.csv) — cleaned dataset  
+- [`Worldbank.ipynb`](Worldbank.ipynb) — full analysis, cleaning, and modeling  
+- [`c538bed6-24d9-4d25-a075-11dc22bfe385_Data.csv`](c538bed6-24d9-4d25-a075-11dc22bfe385_Data.csv) — cleaned dataset  
 - [`scatter_plot.png`](scatter_plot.png) — visualization of predicted vs actual GDP  
 
 Explore the notebook and data directly in this repository.
