@@ -8,60 +8,72 @@
 
 ## Introduction
 
-GDP per capita is one of the most common measures of a country's economic wellbeing. But what factors influence it the most? Using World Bank data, we explored economic, health, and education indicators to predict GDP per capita across countries.
+GDP per capita is a common measure of a country's economic wellbeing. But what factors influence it the most? Using World Bank data, we explored economic, health, and education indicators to predict GDP per capita across countries.
 
 This blog explains our findings in a clear, non-technical way, supported by visualizations and analysis.
 
 ---
 
-## Key Features That Matter
+## 1. Life Expectancy and GDP
 
-We looked at five main indicators in our model:
+**Hypothesis:** Countries with higher life expectancy tend to have higher GDP per capita.  
 
-| Indicator | Effect on GDP per Capita |
-|-----------|-------------------------|
-| Life expectancy at birth | Positive — higher life expectancy tends to correlate with higher GDP |
-| Health expenditure (% of GDP) | Positive — more spending on health generally relates to higher GDP |
-| Population growth | Positive — in our model, higher population growth is associated with higher GDP |
-| School enrollment (secondary) | Slight positive effect |
-| Inflation (consumer prices) | Slight negative effect |
+**Analysis:** Scatter plot of life expectancy vs GDP. 
 
-> These coefficients help us understand which factors most influence GDP per capita.
+**Interpretation:** The scatter plot shows a positive trend, indicating higher life expectancy is generally associated with higher GDP per capita.
+
+**Conclusion:** The hypothesis is supported by the data.
 
 ---
 
-## Predicted vs Actual GDP
+## 2. Secondary School Enrollment and GDP
 
-We built a model to predict GDP per capita using the indicators above.
+**Hypothesis:** Higher secondary school enrollment rates are associated with higher GDP per capita.
 
-The scatter plot above shows:
+**Analysis:** Scatter plot of school enrollment vs GDP.
 
-- **Points on the diagonal line:** perfect prediction  
-- **Points above the line:** the model overestimates GDP  
-- **Points below the line:** the model underestimates GDP  
+**Interpretation:** The relationship is positive but weaker than life expectancy.
 
-Most countries are close to the line, meaning the model captures general trends well. Outliers indicate unique factors, like natural resources or small populations, that the model doesn’t capture.
+**Conclusion:** Education appears to contribute positively to economic prosperity.
 
 ---
 
-## Creative Scenario: What If a Country Improves Its Indicators?
+## 3. Inflation and GDP
 
-Suppose a country increases:
+**Hypothesis:** Higher inflation is associated with lower GDP per capita.
 
-- School enrollment by 10%  
-- Health expenditure by 5%  
+**Analysis:** Scatter plot of inflation vs GDP.
 
-Using our model, predicted GDP per capita would increase. This scenario demonstrates how improving education and healthcare can positively impact economic growth.
+**Interpretation:** A mild negative relationship exists, with significant variation across countries.
 
-> Note: This is a simplified example. Real-world outcomes depend on many factors beyond these indicators.
+**Conclusion:** Inflation has a negative but limited effect on GDP per capita.
 
 ---
 
-## Conclusion
+## 4. Predicting GDP Per Capita
 
-- Life expectancy, health expenditure, and population growth are the main drivers of GDP per capita in this dataset.  
-- The scatter plot shows that while the model captures broad trends, extreme cases still exist due to unique country-specific factors.  
-- Data-driven insights like this can help policymakers understand how improving social and economic indicators may support growth.
+**Hypothesis:** GDP per capita can be predicted using socio-economic indicators.
+
+**Model Results:**
+	•	R²: ~0.39
+	•	MAE: ~13,169 USD
+
+**Interpretation:** The model explains ~39% of the variation. Extreme high-income countries are harder to predict accurately.
+
+**Conclusion:** Socio-economic indicators provide meaningful predictive power, but additional factors also affect GDP.
+
+---
+
+## Deployment
+
+**Purpose:** Make insights and the predictive model accessible to stakeholders.
+	•	**GitHub:** Full notebook, cleaned dataset, and scatter plot available
+	•	**Blog Post:** Communicates findings to non-technical stakeholders via GitHub Pages
+	•	**Predictive Model:** Linear Regression model ready to generate GDP predictions on new data
+
+**Example Scenario:** Increasing school enrollment and health expenditure predicts higher GDP per capita.
+
+**Model Reuse:** The model can be saved and loaded using pickle for future predictions.
 
 ---
 
