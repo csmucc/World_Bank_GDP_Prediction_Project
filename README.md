@@ -15,7 +15,7 @@ This project analyzes World Bank data to understand the factors that drive a cou
 
 ## Blog Post
 
-Read the full blog post here: [View Blog](https://<your-username>.github.io/<your-repo-name>/)
+Read the full blog post here: [View Blog](https://csmucc.github.io/World_Bank_GDP_Prediction_Project/)
 
 The blog explains the project in non-technical language, presents key findings, and includes visualizations to highlight insights.
 
