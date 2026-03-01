@@ -1,8 +1,6 @@
-# World Bank GDP Project
+# Predicting Prosperity: What Drives a Country’s GDP?
 
-This project analyzes World Bank data to understand the factors that drive a country’s GDP per capita. Using indicators like life expectancy, health expenditure, population growth, school enrollment, and inflation, we built a predictive model and visualized the results.
-
----
+This project explores which socio-economic indicators influence GDP per capita across countries using World Bank data. The analysis follows the **CRISP-DM framework** and includes data cleaning, visualization, predictive modeling, and deployment-ready results.
 
 ## Project Files
 
@@ -11,7 +9,16 @@ This project analyzes World Bank data to understand the factors that drive a cou
 - [`scatter_plog.png`](scatter_plog.png) — Visualization of predicted vs actual GDP per capita  
 - [`index.md`](index.md) — Blog post for GitHub Pages  
 
----
+## Project Highlights
+
+- **Business Understanding**: Investigated factors that drive GDP per capita  
+- **Data Understanding & Preparation**: Cleaned World Bank data, handled missing values, and reshaped for modeling  
+- **Analysis & Visualizations**:  
+  1. Life Expectancy vs GDP  
+  2. Secondary School Enrollment vs GDP  
+  3. Inflation vs GDP  
+  4. Predicted vs Actual GDP using Linear Regression  
+- **Deployment**: Model and insights are ready to be used by stakeholders via GitHub and GitHub Pages  
 
 ## Blog Post
 
@@ -19,24 +26,12 @@ Read the full blog post here: [View Blog](https://csmucc.github.io/World_Bank_GD
 
 The blog explains the project in non-technical language, presents key findings, and includes visualizations to highlight insights.
 
----
-
 ## Libraries Used
 
 - Python 3.x  
 - pandas  
 - scikit-learn  
 - matplotlib / seaborn (for plots in notebook)  
-
----
-
-## Summary of Results
-
-- Life expectancy, health expenditure, and population growth are the main drivers of GDP per capita.  
-- Our linear regression model predicts GDP with an R² of ~0.39.  
-- The scatter plot of Predicted vs Actual GDP highlights countries where the model over- or under-predicts.
-
----
 
 ## Acknowledgements
 
